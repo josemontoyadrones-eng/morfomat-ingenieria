@@ -154,8 +154,8 @@
       .site-nav .nav-quote { justify-content: center; margin-top: 7px; padding: 13px; }
       .hero::before { inset: 0; opacity: .5; background-position: 57% center; }
       .hero::after { background: linear-gradient(90deg, rgba(8,31,23,.96), rgba(8,31,23,.83)); }
-      .hero-grid { min-height: 0; padding-block: 48px 42px; }
-      .hero-copy { grid-column: auto; padding-right: 0; }
+      .hero-grid { grid-template-columns: minmax(0, 1fr); min-height: 0; padding-block: 48px 42px; }
+      .hero-copy { grid-column: 1 / -1; width: 100%; max-width: 760px; padding-right: 0; }
       .hero h1 { font-size: 1.12rem; line-height: 1.55; }
       .hero-copy > p:not(.eyebrow) { font-size: .94rem; }
       .hero-actions { align-items: stretch; flex-direction: column; }
